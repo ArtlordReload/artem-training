@@ -33,20 +33,20 @@ module.exports = {
     //     // other options
     //   },
     // },
-    {
-      resolve: `gatsby-plugin-advanced-sitemap`,
-      options: {
-        exclude: [`/404`, `/layouts`],
-      },
-    },
-    {
-      resolve: "gatsby-plugin-robots-txt",
-      options: {
-        host: process.env.WEBSITE_URL,
-        sitemap: `${process.env.GATSBY_WEBSITE_URL}/sitemap.xml`,
-        policy: [{ userAgent: "*", allow: "/" }],
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-advanced-sitemap`,
+    //   options: {
+    //     exclude: [`/404`, `/layouts`],
+    //   },
+    // },
+    // {
+    //   resolve: "gatsby-plugin-robots-txt",
+    //   options: {
+    //     host: process.env.WEBSITE_URL,
+    //     sitemap: `${process.env.GATSBY_WEBSITE_URL}/sitemap.xml`,
+    //     policy: [{ userAgent: "*", allow: "/" }],
+    //   },
+    // },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -109,16 +109,16 @@ module.exports = {
      * Gatsby's data processing layer begins with “source”
      * plugins. Here the site sources its data from WordPress.
      */
-    {
-      resolve: `gatsby-source-wordpress`,
-      options: {
-        /*
-         * The full URL of the WordPress site's GraphQL API.
-         * Example : 'https://www.example-site.com/graphql'
-         */
-        url: `${process.env.GATSBY_WORDPRESS_URL}/graphql`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-wordpress`,
+    //   options: {
+    //     /*
+    //      * The full URL of the WordPress site's GraphQL API.
+    //      * Example : 'https://www.example-site.com/graphql'
+    //      */
+    //     url: `${process.env.GATSBY_WORDPRESS_URL}/graphql`,
+    //   },
+    // },
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
