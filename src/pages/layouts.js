@@ -3,6 +3,9 @@ import Layout from "../components/layout"
 import { LayoutTitle } from "../styles/app.styles"
 import { Helmet } from "react-helmet"
 
+import HomeHero from "../layouts/HomeHero/home-hero.component"
+
+
 const Layouts = () => {
   return (
     <Layout>
@@ -11,6 +14,8 @@ const Layouts = () => {
         <meta name="robots" content="noindex" />
       </Helmet>
       <LayoutTitle>MiscContent</LayoutTitle>
+      <HomeHero />
+      
     </Layout>
   )
 }

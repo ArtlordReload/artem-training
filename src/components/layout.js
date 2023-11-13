@@ -10,14 +10,19 @@ import PropTypes from "prop-types"
 
 import SEO from "../components/seo/seo.component"
 import Header from "../components/header/header.component"
+import MainNav from "../components/header/main-nav/main-nav.component"
 import { AppContainer } from "../styles/app.styles"
 import Footer from "./footer/footer.component"
+import HomeHero from "../layouts/HomeHero/home-hero.component"
 
 const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <AppContainer>{children}</AppContainer>
+      <AppContainer>
+        <HomeHero />
+        {children}
+      </AppContainer>
       <Footer />
     </>
   )
