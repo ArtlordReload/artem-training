@@ -21,16 +21,19 @@ const HomeHero = () => {
           gatsbyImageData(layout: FULL_WIDTH)
         }
       }
+      vectorPalmImage: file(relativePath: { eq: "vector-palm.png" }) {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
     }
   `)
-
-  
 
   return (
     <S.BgImage img={staticQuery.background}>
       {" "}
       <S.Wrapper>
-        <Grid container spacing={12}>
+        <Grid container >
           <Grid item xs={4} md={4}>
             <S.LeftWrapper>
               {" "}
@@ -44,11 +47,15 @@ const HomeHero = () => {
           </Grid>
           <Grid item xs={4} md={4}>
             <S.MidWrapper>
-            <S.VeteranOwnedImg  img={staticQuery.veteranOwnedImage}></S.VeteranOwnedImg>
+              <S.VeteranOwnedImg
+                img={staticQuery.veteranOwnedImage}
+              ></S.VeteranOwnedImg>
             </S.MidWrapper>
           </Grid>
           <Grid item xs={4} md={4}>
-            <h1>xs=6 md=4</h1>
+            <S.RightWrapper>
+              <S.VectorPalm img={staticQuery.vectorPalmImage}></S.VectorPalm>
+            </S.RightWrapper>
           </Grid>
         </Grid>
         {/*       <S.LeftWrapper>asdf</S.LeftWrapper>

@@ -27,10 +27,10 @@ export const GradientBox = styled.div`
   height: 113px;
   background: linear-gradient(
     to bottom,
-    rgba(223, 220, 221, 0.5),
+    rgba(223, 220, 221, 0.1),
     rgba(255, 255, 255, 1)
   );
-  z-index: -100;
+  z-index: 1;
 `
 ///////////////////////////
 
@@ -46,25 +46,25 @@ export const LeftWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  padding-bottom: 2rem;
 `
 
 export const MidWrapper = styled.div`
-display: flex;
-  width: 100%;
-  height: 100%;
-  max-height: 300px;
-  max-width: 300px;
-  align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column-reverse;
+    padding-top: 20rem;
 `
 
 export const RightWrapper = styled.div`
-  grid-column-start: 3;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   align-items: center;
   justify-content: space-between;
   padding-left: 2.2rem;
+  top: 0;
 `
 export const Button = styled(CustomButton)`
   background-color: Green;
@@ -74,6 +74,7 @@ export const Button = styled(CustomButton)`
   align-content: center;
   padding: 1rem 2rem !important;
   align-self: flex-start;
+  z-index:2;
 `
 
 export const SoeHelveticaBigText = styled.div`
@@ -106,6 +107,20 @@ export const HeeboText = styled.div`
 export const VeteranOwnedImg = styled(CustomImage)`
   width: 100%;
   height: 100%;
-  max-width:87px;
-  img{object-fit: contain !important;};
-`;
+  max-width: 87px;
+  img {
+    object-fit: contain !important;
+  }
+  z-index: 2;
+`
+
+export const VectorPalm = styled(CustomImage)`
+  width: 100%;
+  height: 100%;
+  max-width: 587px;
+  top: -20px;
+  position: absolute;
+  img {
+    object-fit: contain !important;
+  }
+`
