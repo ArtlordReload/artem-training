@@ -14,7 +14,7 @@ import MainNav from "../components/header/main-nav/main-nav.component"
 import { AppContainer } from "../styles/app.styles"
 import Footer from "./footer/footer.component"
 import HomeHero from "../layouts/HomeHero/home-hero.component"
-import LinkCards from "../layouts/LinksCards/link-card.component"
+import PromoTabs from "../layouts/PromoTabs/promo-tabs.component"
 
 const Layout = ({ children }) => {
   return (
@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
       <Header />
       <AppContainer>
         <HomeHero />
-        <LinkCards />
+        <PromoTabs />
         {children}
       </AppContainer>
       <Footer />

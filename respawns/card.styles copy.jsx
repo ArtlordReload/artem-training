@@ -4,14 +4,64 @@ import styled from "@emotion/styled"
 import CustomImage from "../../components/custom-image/custom-image.component"
 //import CustomButton from "../../custom-button/custom-button.component"
 
+
 export const Images = styled(CustomImage)`
   width: 100%;
   height: 100%;
-  max-width: 587px;
+  min-width: 250px;
   img {
     object-fit: contain !important;
   }
 `
+
+export const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-top: 100px;
+`
+
+export const Card = styled.div`
+  display: ${({ active }) => (active ? "block" : "none")};
+  width: 30%; // Adjust the width as needed
+`
+
+export const Text = styled.p`
+  text-align: center;
+  margin-top: 10px;
+`
+
+
+
+/* export const Images = styled(CustomImage)`
+  width: 100%;
+  height: 100%;
+  min-width: 250px;
+  img {
+    object-fit: contain !important;
+  }
+`
+
+export const Container = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 100px;
+
+`
+
+export const Card = styled.div`
+  display: ${({ active }) => (active ? "block" : "none")};
+`
+
+export const Text = styled.p`
+  text-align: center;
+  margin-top: 10px;
+` */
 
 
 /*import * as React from 'react';
