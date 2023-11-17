@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   border: 10px;
+  margin-top: 100px;
 `
 export const Image = styled(CustomImage)`
   width: 100%;
@@ -34,5 +35,4 @@ export const Link = styled.a`
   font-size: 18px;
   font-weight: 500;
   line-height: 12px;
-
 `

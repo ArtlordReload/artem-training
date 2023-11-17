@@ -15,6 +15,7 @@ import { AppContainer } from "../styles/app.styles"
 import Footer from "./footer/footer.component"
 import HomeHero from "../layouts/HomeHero/home-hero.component"
 import PromoTabs from "../layouts/PromoTabs/promo-tabs.component"
+import TextImage from "../layouts/TextImage/text-image.component"
 
 const Layout = ({ children }) => {
   return (
@@ -23,6 +24,7 @@ const Layout = ({ children }) => {
       <AppContainer>
         <HomeHero />
         <PromoTabs />
+        <TextImage />
         {children}
       </AppContainer>
       <Footer />
