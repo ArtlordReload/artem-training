@@ -16,6 +16,8 @@ import Footer from "./footer/footer.component"
 import HomeHero from "../layouts/HomeHero/home-hero.component"
 import PromoTabs from "../layouts/PromoTabs/promo-tabs.component"
 import TextImage from "../layouts/TextImage/text-image.component"
+import CardCarousel from "../components/card-carousel/card-carousel.component"
+import CardSwiper from "../components/card-swiper/card-swiper.component"
 
 const Layout = ({ children }) => {
   return (
@@ -25,6 +27,7 @@ const Layout = ({ children }) => {
         <HomeHero />
         <PromoTabs />
         <TextImage />
+        <CardSwiper />
         {children}
       </AppContainer>
       <Footer />

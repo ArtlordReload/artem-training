@@ -3,6 +3,7 @@ import CustomImage from "../../components/custom-image/custom-image.component.js
 
 export const Wrapper = styled.div`
   background-color: #f8fdf7;
+  margin-top:128px;
 `
 
 export const LeftWrapper = styled.div`
