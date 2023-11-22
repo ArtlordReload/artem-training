@@ -17,7 +17,9 @@ import HomeHero from "../layouts/HomeHero/home-hero.component"
 import PromoTabs from "../layouts/PromoTabs/promo-tabs.component"
 import TextImage from "../layouts/TextImage/text-image.component"
 import CardCarousel from "../components/card-carousel/card-carousel.component"
-import CardSwiper from "../components/card-swiper/card-swiper.component"
+import InstagramFeed from "../layouts/InstagramFeed/instagram-feed"
+import ContentBgImage from "../layouts/ContentBgImage/content-bg-image.component"
+import Map from "../layouts/Map/map.component"
 
 const Layout = ({ children }) => {
   return (
@@ -27,7 +29,9 @@ const Layout = ({ children }) => {
         <HomeHero />
         <PromoTabs />
         <TextImage />
-        <CardSwiper />
+        <InstagramFeed />
+        <ContentBgImage />
+        <Map />
         {children}
       </AppContainer>
       <Footer />

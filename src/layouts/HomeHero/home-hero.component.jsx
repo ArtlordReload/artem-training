@@ -31,12 +31,10 @@ const HomeHero = () => {
 
   return (
     <S.BgImage img={staticQuery.background}>
-      {" "}
       <S.Wrapper>
         <Grid container >
           <Grid item xs={4} md={4}>
             <S.LeftWrapper>
-              {" "}
               <S.SoeHelveticaBigText>Vacation at Home</S.SoeHelveticaBigText>
               <S.HeeboText>
                 Visit one of our two locations lorem ipsum sit velit official
