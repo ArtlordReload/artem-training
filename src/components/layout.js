@@ -32,7 +32,6 @@ const Layout = ({ children }) => {
         <InstagramFeed />
         <ContentBgImage />
         <Map />
-        {children}
       </AppContainer>
       <Footer />
     </>

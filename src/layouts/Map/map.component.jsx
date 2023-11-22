@@ -22,8 +22,19 @@ const Map = () => {
       <S.FilterColor />
       <Container>
         <Grid container md={12} xl={12}>
-          <Grid item md={12} xl={6}>
-            <h2>Find a Store</h2>
+          <Grid item md={4}>
+            <S.WhiteBox>
+              <S.Title>Store Locator</S.Title>
+              <p>1024 Aventura Street, Boston, MA 02496</p>
+              <S.LinksWrapper>
+                <S.Link href="tel:1-800-555-5555">CALL</S.Link>
+                <S.Link href="tel:1-800-555-5555">DIRECTIONS</S.Link>
+              </S.LinksWrapper>
+                <S.Title>Hours</S.Title>
+              <p>
+                Open 9 to 8 <br /> 7 Days a Week
+              </p>
+            </S.WhiteBox>
           </Grid>
         </Grid>
       </Container>
