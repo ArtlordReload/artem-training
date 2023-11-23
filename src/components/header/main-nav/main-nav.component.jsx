@@ -22,7 +22,7 @@ const MainNav = () => {
     <S.TopWrapper>
       <Container maxWidth="xl">
         <S.Wrapper>
-          <S.LeftWrapper> <S.Link>ABOUT</S.Link>  <S.Link>EVENTS</S.Link>  <S.Link>CONTACT</S.Link></S.LeftWrapper>
+          <S.LeftWrapper> <S.Link href="/about">ABOUT</S.Link>  <S.Link>EVENTS</S.Link>  <S.Link>CONTACT</S.Link></S.LeftWrapper>
           <S.MidWrapper img={staticQuery.logo} />
           <S.RightWrapper><S.Button >SHOP NOW</S.Button></S.RightWrapper>
         </S.Wrapper>

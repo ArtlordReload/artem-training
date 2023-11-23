@@ -26,12 +26,7 @@ const Layout = ({ children }) => {
     <>
       <Header />
       <AppContainer>
-        <HomeHero />
-        <PromoTabs />
-        <TextImage />
-        <InstagramFeed />
-        <ContentBgImage />
-        <Map />
+          {children}
       </AppContainer>
       <Footer />
     </>
