@@ -3,6 +3,7 @@ import CustomBgImage from "../../components/custom-bg-image/custom-bg-image.comp
 import CustomImage from "../../components/custom-image/custom-image.component.jsx"
 import CustomButton from "../../components/custom-button/custom-button.component.jsx"
 import { GatsbyImage } from "gatsby-plugin-image"
+import Container from "@mui/material/Container"
 export const BgImage = styled(CustomBgImage)`
   width: 100%;
   height: 100%;
@@ -34,9 +35,9 @@ export const GradientBox = styled.div`
 `
 ///////////////////////////
 
-export const Wrapper = styled.div`
+export const Wrapper = styled(Container)`
   padding-top: 58px;
-  padding-left: 68px;
+
   width: 100%;
   color: yellow;
   position: relative;
@@ -50,11 +51,11 @@ export const LeftWrapper = styled.div`
 `
 
 export const MidWrapper = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-direction: column-reverse;
-    padding-top: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column-reverse;
+  padding-top: 20rem;
 `
 
 export const RightWrapper = styled.div`
@@ -74,7 +75,7 @@ export const Button = styled(CustomButton)`
   align-content: center;
   padding: 1rem 2rem !important;
   align-self: flex-start;
-  z-index:2;
+  z-index: 2;
 `
 
 export const SoeHelveticaBigText = styled.div`

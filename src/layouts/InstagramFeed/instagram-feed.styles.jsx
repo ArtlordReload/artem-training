@@ -16,7 +16,9 @@ export const Wrapper = styled.div`
   position: relative;
   padding-top: 104px;
   padding-bottom: 104px;
-   
+  .swiper {
+    overflow: visible;
+  }
 `
 
 export const Background = styled(CustomImage)`
@@ -50,7 +52,7 @@ export const RightWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  align-content:space-around;
+  align-content: space-around;
 `
 
 export const Button = styled(CustomButton)`
@@ -61,9 +63,9 @@ export const Button = styled(CustomButton)`
   align-content: center;
   padding: 1rem 2rem !important;
   align-self: flex-end;
-  z-index:2;
+  z-index: 2;
 `
 
 export const GridContainer = styled.div`
-margin-bottom: 2rem;
+  margin-bottom: 2rem;
 `

@@ -33,7 +33,7 @@ export const Wrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
   color: white;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
 `
 
 export const LeftWrapper = styled.div`
@@ -43,9 +43,9 @@ export const LeftWrapper = styled.div`
 `
 
 export const RightWrapper = styled.div`
-gap: 16px;
-display: flex;
-row-gap: 16px;
+  gap: 16px;
+  display: flex;
+  row-gap: 16px;
 `
 
 export const Link = styled(CustomLink)`
@@ -53,6 +53,9 @@ export const Link = styled(CustomLink)`
   border-right: 1px solid #ffffff;
   &:last-child {
     border-right: none;
+  }
+  &:first-of-type {
+    padding-left: 0;
   }
 `
 export const IconLink = styled(CustomLink)`
@@ -70,5 +73,4 @@ export const IconLink = styled(CustomLink)`
   padding: 3.95px;
   position: relative;
   width: 28px;
-
 `

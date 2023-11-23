@@ -31,8 +31,8 @@ const HomeHero = () => {
 
   return (
     <S.BgImage img={staticQuery.background}>
-      <S.Wrapper>
-        <Grid container >
+      <S.Wrapper maxWidth="xl">
+        <Grid container>
           <Grid item xs={4} md={4}>
             <S.LeftWrapper>
               <S.SoeHelveticaBigText>Vacation at Home</S.SoeHelveticaBigText>
@@ -56,11 +56,8 @@ const HomeHero = () => {
             </S.RightWrapper>
           </Grid>
         </Grid>
-        {/*       <S.LeftWrapper>asdf</S.LeftWrapper>
-        <S.MidWrapper>asdf</S.MidWrapper>
-        <S.RightWrapper>asdf</S.RightWrapper>*/}
-        <S.GradientBox />
       </S.Wrapper>
+      <S.GradientBox />
     </S.BgImage>
   )
 }

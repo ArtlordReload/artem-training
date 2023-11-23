@@ -56,7 +56,7 @@ export default function App() {
 
   return (
     <S.Wrapper>
-    <S.Background img={staticQuery.background} />
+      <S.Background img={staticQuery.background} />
       <Container maxWidth="lg">
         <S.GridContainer>
           <Grid container>
@@ -116,7 +116,6 @@ export default function App() {
           <Next />
         </IconButton>
       </Container>
-      
     </S.Wrapper>
   )
 }
